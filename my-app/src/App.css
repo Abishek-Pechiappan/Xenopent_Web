@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-/* Rectangle Header Styles */
+
 .rectangle-header {
   height: 80px;
   width: 100%;
@@ -18,12 +18,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/*This is the Logo size changer*/
+
 .logo {
   width: 500px;
   height: 500px;
 }
 
-/* Main content area */
+
 .App-header {
   padding-top: 80px; 
   background-color: #000000;
@@ -36,10 +38,12 @@
   color: white;
 }
 
+/*This is the Logo and Intro Module*/
+
 .rectangle {
   width: 95vw;
   height: 70vh; 
-  background-color: rgb(145, 129, 129); 
+  background-color: rgb(202, 188, 188); 
   border: 1px solid black; 
   display: flex; 
   align-items: center; 
@@ -61,10 +65,12 @@
   text-align: justify;
 }
 
+/*This is the Service Module*/
+
 .Service {
   width: 95vw;
   height: 72vh;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(180, 163, 163);
   margin-top: 10%;
   border-radius: 10px;
   display: flex;
@@ -142,14 +148,13 @@
   transform: translateY(0);
 }
 
-.container:hover > .card:not(:hover) {
-  flex: 0.5;
-}
+
+/*This is the Reviews Module*/
 
 .reviews {
   width: 95vw;
   height: 75vh;
-  background-color: grey;
+  background-color: rgb(134, 123, 123);
   margin-top: 11%;
   border-radius: 10px;
   display: flex;
@@ -170,7 +175,6 @@
   margin-top: 1%;
 }
 
-/* Review Carousel Styles */
 .review-slide {
   padding: 0 15px;
   box-sizing: border-box;
@@ -203,20 +207,6 @@
   font-size: medium;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: #282c34;
-}
-
-.slick-dots li button:before {
-  color: white;
-}
-
-.slick-dots li.slick-active button:before {
-  color: white;
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .review-card {
     height: 350px;

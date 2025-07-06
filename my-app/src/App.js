@@ -5,13 +5,15 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Slider from "react-slick";
 
-// Header component
+// Header  
 const Header = () => {
   return (
     <header className="rectangle-header">
     </header> 
   );
 };
+
+// This is the logo and the Intro Module 
 
 const Rectangle = () => {
   return (
@@ -25,6 +27,8 @@ const Rectangle = () => {
     </div>
   );
 };
+
+/* This the Service Module*/
 
 const Rectangle2 = () => {
   const services = [
@@ -61,6 +65,8 @@ const Rectangle2 = () => {
   )
 }
 
+/* This the Review Module*/
+
 const Rectangle3 = () => {
   const settings = {
     dots: false,
@@ -70,6 +76,7 @@ const Rectangle3 = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows:false,
     responsive: [
       {
         breakpoint: 1024,
@@ -139,6 +146,16 @@ const Rectangle3 = () => {
     </div>
   );
 };
+
+//Queries Module
+
+const Rectangle4 = () => {
+  return (
+    <div className='Queries'>
+      
+    </div>
+  )
+}
 
 // Main App component
 function App() {
