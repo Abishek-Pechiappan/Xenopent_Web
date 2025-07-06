@@ -212,3 +212,131 @@
     height: 350px;
   }
 }
+
+/*Queries Module */
+
+.Queries {
+  width: 95vw;
+  height: 75vh;
+  background-color: rgb(134, 123, 123);
+  margin-top: 11%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contactform {
+  width: 50vw;
+  height: 70vh;
+  background-color: rgba(90, 227, 245, 0.637);
+  border-radius: 10px;
+  margin-left: 2%;
+}
+
+/* Queries Form Styling */
+
+.contactform {
+  width: 50vw;
+  height: 70vh;
+  background-color: rgba(90, 227, 245, 0.637);
+  border-radius: 10px;
+  margin-left: 2%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform h1 {
+  color: #282c34;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.contactform form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 1.2rem;
+  color: #282c34;
+  font-weight: bold;
+  text-align: left;
+}
+
+.field input {
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #282c34;
+  box-shadow: 0 0 5px rgba(40, 44, 52, 0.5);
+}
+
+.qsub {
+  padding: 12px 20px;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s;
+}
+
+.qsub:hover {
+  background-color: #3a404b;
+}
+
+@media (max-width: 768px) {
+  .Queries {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  .contactform {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+  
+  .maps {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* Maps Module in Queries*/
+
+.maps {
+  width: 38vw;
+  height: 70vh;
+  background-color: rgba(90, 227, 245, 0.637);
+  border-radius: 10px;
+  margin-left: 3%;
+}
+
+.maps iframe {
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+}
