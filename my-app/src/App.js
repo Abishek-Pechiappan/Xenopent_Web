@@ -24,33 +24,44 @@ const Rectangle = () => {
 };
 
 const Rectangle2 = () => {
-
-  const[isOpen, setIsOpen] = useState(false);
-
-
+  const services = [
+    {
+      title: "Web-Application",
+      description: "Identify vulnerabilities before hackers do with our comprehensive security assessments."
+    },
+    {
+      title: "Networks",
+      description: "Get expert advice to strengthen your organization's security posture."
+    },
+    {
+      title: "Social Engineering",
+      description: "24/7 support to detect, respond to, and recover from security breaches."
+    }
+  ];
 
   return (
     <div className='Service'>
-        <div className='flexcard'>
-          <div className='container'>
-            <motion.div onClick={() => setIsOpen(isOpen)} className='it1'>
-              <motion.h2>Web-Application</motion.h2>
-              <motion.div>
-                <p>Our cutting-edge website offers professional web application vulnerability testing to help businesses 
-                  identify and fix security flaws before hackers exploit them. Using advanced scanning tools and expert manual 
-                  analysis, we thoroughly assess your web apps for common vulnerabilities like SQL injection, cross-site scripting (XSS), 
-                  and insecure authentication. Our detailed reports provide actionable insights to strengthen your security posture, 
-                  ensuring compliance with industry standards like OWASP and GDPR. Don’t wait for a breach—protect your digital assets 
-                  with our reliable, affordable, and comprehensive vulnerability testing services today!
-                </p>
-              </motion.div>
-            </motion.div>
-            <div className='it2'></div>
-            <div className='it3'></div>
-          </div>
+      <h2>Services</h2>
+      <div className='flexcard'>
+        <div className='container'>
+          {services.map((service, index) => (
+            <div key={index} className={`card card-${index + 1}`}>
+              <div className="card-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        <h2>Services</h2>
       </div>
+    </div>
+  )
+}
+
+const Rectagnle3 = () => {
+  return (
+    <div className='Reviews'>
+    </div>
   )
 }
 
@@ -62,6 +73,7 @@ function App() {
       <header className="App-header">
         <Rectangle />
         <Rectangle2 />
+        <Rectagnle3 />
       </header>
     </div>
   );
