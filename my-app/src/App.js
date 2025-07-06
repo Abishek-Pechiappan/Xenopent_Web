@@ -1,6 +1,9 @@
-import { useState } from 'react';
 import './App.css';
-import {motion} from 'framer-motion';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import Slider from "react-slick";
 
 // Header component
 const Header = () => {
@@ -13,7 +16,7 @@ const Header = () => {
 const Rectangle = () => {
   return (
     <div className="rectangle">
-      <img src='e.png' className="logo" alt="Xenopent Logo" />'
+      <img src='/Logo/e.png' className="logo" alt="Xenopent Logo" />'
       <div className='rectangle-text'>
         <h2 className='t1'>Xenopent</h2>
         <line className='t2'>Mastering the art of securing Cyberspace</line>
@@ -58,12 +61,84 @@ const Rectangle2 = () => {
   )
 }
 
-const Rectagnle3 = () => {
+const Rectangle3 = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  };
+
+  const data = [
+    {
+      Name:`Abishek`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+    {
+      Name:`Afreethi`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+    {
+      Name:`Deepika`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+    {
+      Name:`Vijay`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+    {
+      Name:`Deepak`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+    {
+      Name:`Harish Anand`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+    {
+      Name:`Sarathi`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+    {
+      Name:`Mano Ranjithaa`,
+      Review:`Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.`
+    },
+  ];
+
   return (
-    <div className='Reviews'>
+    <div className='reviews'>
+      <h2>Reviews</h2>
+      <div className='reviewbox'>
+        <Slider {...settings}>
+          {data.map((d, index) => (
+            <div key={index} className="review-slide">
+              <div className="review-card">
+                <h3 className="review-name">{d.Name}</h3>
+                <p className="review-text">{d.Review}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 // Main App component
 function App() {
@@ -73,7 +148,7 @@ function App() {
       <header className="App-header">
         <Rectangle />
         <Rectangle2 />
-        <Rectagnle3 />
+        <Rectangle3 />
       </header>
     </div>
   );
