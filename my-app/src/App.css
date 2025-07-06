@@ -6,8 +6,8 @@
 .rectangle-header {
   height: 80px;
   width: 100%;
-  background-color: #282c34;
-  color: white;
+  background-color: #1f304e;
+  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,13 +43,14 @@
 .rectangle {
   width: 95vw;
   height: 70vh; 
-  background-color: rgb(202, 188, 188); 
+  background-color: rgb(0, 0, 0); 
   border: 1px solid black; 
   display: flex; 
   align-items: center; 
   color: white; 
   margin-top: 2vh;
   border-radius: 10px;
+  margin-top: 5%;
 }
 
 .rectangle-text {
@@ -70,7 +71,7 @@
 .Service {
   width: 95vw;
   height: 72vh;
-  background-color: rgb(180, 163, 163);
+  background-color: rgb(0, 0, 0);
   margin-top: 10%;
   border-radius: 10px;
   display: flex;
@@ -154,7 +155,7 @@
 .reviews {
   width: 95vw;
   height: 75vh;
-  background-color: rgb(134, 123, 123);
+  background-color: rgb(0, 0, 0);
   margin-top: 11%;
   border-radius: 10px;
   display: flex;
@@ -218,7 +219,7 @@
 .Queries {
   width: 95vw;
   height: 75vh;
-  background-color: rgb(134, 123, 123);
+  background-color: rgb(0, 0, 0);
   margin-top: 11%;
   border-radius: 10px;
   display: flex;
@@ -340,3 +341,84 @@
   height: inherit;
   border-radius: 10px;
 }
+
+/* Footer Modules */
+
+.Footer {
+  width: 100%;
+  background-color: #000000;
+  margin-top: 11%;
+  padding: 60px 0;
+  color: white;
+}
+
+.Made {
+  font-size: small;
+  text-align: left;
+  margin-bottom: -7vh;
+}
+
+.footer-content {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  color: #1f304e;
+}
+
+.footer-contacts {
+  text-align: right;
+}
+
+.footer-contacts p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.footer-contacts i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-contacts {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-contacts p {
+    justify-content: center;
+  }
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

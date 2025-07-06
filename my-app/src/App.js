@@ -18,7 +18,7 @@ const Header = () => {
 const Rectangle = () => {
   return (
     <div className="rectangle">
-      <img src='/Logo/e.png' className="logo" alt="Xenopent Logo" />'
+      <img src='/Logo/e.png' className="logo" alt="Xenopent Logo" />
       <div className='rectangle-text'>
         <h2 className='t1'>Xenopent</h2>
         <line className='t2'>Mastering the art of securing Cyberspace</line>
@@ -180,6 +180,29 @@ const Rectangle4 = () => {
         </iframe>
       </div>
     </div>
+  );
+};
+
+const Rectangle5 = () => {
+  return (
+    <div className='Footer'>
+      <div className="footer-content">
+        <div className="footer-social">
+          <a href="#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
+          <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
+          <a href="#" className="social-icon"><i className="fab fa-linkedin-in"></i></a>
+          <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
+        </div>
+        <div className="footer-contacts">
+          <p><i className="fas fa-envelope"></i> contact@xenopent.com</p>
+          <p><i className="fas fa-phone"></i> +1 (123) 456-7890</p>
+          <p><i className="fas fa-map-marker-alt"></i> 123 Cyber Street, Security City</p>
+        </div>
+      </div>
+        <div className='Made'>
+          <p>Made by Xenopent</p>
+        </div>
+    </div>
   )
 }
 
@@ -187,12 +210,12 @@ const Rectangle4 = () => {
 function App() {
   return (
     <div className="App">
-      <Header />
       <header className="App-header">
         <Rectangle />
         <Rectangle2 />
         <Rectangle3 />
         <Rectangle4 />
+        <Rectangle5 />
       </header>
     </div>
   );
